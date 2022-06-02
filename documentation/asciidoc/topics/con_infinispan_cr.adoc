@@ -33,5 +33,5 @@ include::yaml/infinispan_cr.yaml[]
 |Specifies the type of {brandname} service to create.
 
 | `spec.version`
-| Specifies the {brandname} Server version.
+| Specifies the {brandname} Server version of your cluster.
 |===
