@@ -129,7 +129,7 @@ func ManagerFromJson(jsonStr string) (*Manager, error) {
 		manager.Operands[i] = o
 	}
 	sort.Slice(manager.Operands, func(i, j int) bool {
-		return manager.Operands[i].UpstreamVersion.LT(*manager.Operands[j].UpstreamVersion)
+		return manager.Operands[i].LT(*manager.Operands[j])
 	})
 	return manager, nil
 }

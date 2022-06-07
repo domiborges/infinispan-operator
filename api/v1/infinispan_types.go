@@ -462,7 +462,9 @@ type InfinispanStatus struct {
 type OperandPhase string
 
 const (
+	// OperandPhasePending indicates that the configured Operand is currently being provisioned and the cluster is not WellFormed
 	OperandPhasePending OperandPhase = "Pending"
+	// OperandPhaseRunning indicates that the Operand has been provisioned and is WellFormed
 	OperandPhaseRunning OperandPhase = "Running"
 )
 
