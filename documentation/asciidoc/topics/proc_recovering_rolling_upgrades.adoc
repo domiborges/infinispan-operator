@@ -2,7 +2,7 @@
 = Recovering from a failed Hot Rod rolling upgrade
 
 [role="_abstract"]
-You can roll back failed Hot Rod rolling upgrade to a previous version if the original cluster is still present.
+You can roll back a failed Hot Rod rolling upgrade to the previous version if the original cluster is still present.
 
 .Prerequisites
 
@@ -18,6 +18,6 @@ You can roll back failed Hot Rod rolling upgrade to a previous version if the or
 +
 The `status.hotRodRollingUpgradeStatus` field must be present.
 +
-. Update `spec.version` field of your `Infinispan CR` to initiate rollback to the original cluster version.
+. Update `spec.version` field of your `Infinispan CR` to the original cluster version defined in the `status.hotRodRollingUpgradeStatus`.
 +
 {ispn_operator} deletes the newly created cluster.
